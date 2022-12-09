@@ -1,0 +1,11 @@
+.mainnav a {
+  text-decoration: none;
+}
+
+.mainnav ul[role="menu-bar"] > [role="menu-item"]:hover a {
+  color: white;
+}
+
+.mainnav ul[role="menu-bar"] > [role="menu-item"]:focus a {
+  color: white !important;
+}

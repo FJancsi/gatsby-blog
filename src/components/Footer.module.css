@@ -1,0 +1,6 @@
+.footerbar {
+  position: fixed;
+  bottom: 0;
+  width: 99%;
+  height: 50px;
+}
