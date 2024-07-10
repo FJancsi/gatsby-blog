@@ -6,7 +6,7 @@ author: Jancsi
 featimg: gatsby-pipeline.png
 ---
 
-# Test
+# TLDR;
 
 I built my first blog with Gatsby and GitHub Pages using GitHub workflows
 
