@@ -20,7 +20,7 @@
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
     "@sakun/system.css": "^0.1.11",
-    "gatsby": "^5.13.6",
+    "gatsby": "^5.14.1",
     "gatsby-awesome-pagination": "^0.3.8",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
