@@ -5,9 +5,9 @@ import MainNav from "./MainNav";
 
 const Header = ({ siteTitle, menuLinks }) => (
   <header id="site-header" role="banner">
-    <div class="window">
-      <div class="title-bar">
-        <h1 class="title">{siteTitle}</h1>
+    <div className="window">
+      <div className="title-bar">
+        <h1 className="title">{siteTitle}</h1>
       </div>
       <MainNav menuLinks={menuLinks} />
     </div>

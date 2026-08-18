@@ -4,7 +4,7 @@ import * as styles from "./Footer.module.css";
 
 const Footer = () => (
   <footer className={styles.footerbar}>
-    <p class="dialog-text">&copy; {new Date().getFullYear()}</p>
+    <p className="dialog-text">&copy; {new Date().getFullYear()}</p>
   </footer>
 );
 

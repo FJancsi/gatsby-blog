@@ -15,7 +15,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "eslint . --ignore-path=.gitignore --quiet --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
@@ -41,5 +42,8 @@
   },
   "overrides": {
     "webpack-dev-middleware": "^5.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
   }
 }

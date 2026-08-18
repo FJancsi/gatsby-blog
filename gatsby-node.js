@@ -17,7 +17,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       fields: {
         subject: {
           type: "[String!]",
-          resolve(source, args, context, info) {
+          resolve(source, _args, _context, _info) {
             const { subject } = source;
             if (
               source.subject == null ||
