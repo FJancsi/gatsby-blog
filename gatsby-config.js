@@ -3,17 +3,17 @@
  */
 module.exports = {
   siteMetadata: {
-    defaultTitle: `Jancsi's Blog`,
+    defaultTitle: `Programozás alapjai`,
     siteUrl: `https://fjancsi.github.io`,
-    defaultDescription: `My blog site based on Gatsby`,
+    defaultDescription: `Programozás alapjai - A programozás alapjainak elsajátításához készült oktatóanyag.`,
     menuLinks: [
       {
         name: `Home`,
         link: `/`,
       },
       {
-        name: `Articles`,
-        link: `/articles`,
+        name: `Első óra`,
+        link: `/lesson-1`,
       },
       {
         name: `About`,
