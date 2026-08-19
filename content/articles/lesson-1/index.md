@@ -3,12 +3,11 @@ title: Követelmények és bevezetés a programozásba
 date: 2026-09-10
 subject: ["probléma", "algoritmus", "program", "forrsákód", "szintaxis", "szemantika", "függvény", "utasítás", "programozási nyelv", "forrásfájl"]
 author: Fekete János
-featimg:
 ---
 # Követelmények
 ## Elérhetőségek
 - Oktató: Fekete János
-- Email: janos_fekete[at]epam.com
+- Email: janos_fekete1[at]epam.com
 ## Tematika
 | Óra | Téma | Legfontosabb eredmény |
 |---:|---|---|

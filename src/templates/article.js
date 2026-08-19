@@ -5,6 +5,8 @@ import _ from "lodash";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 
+import * as styles from "./article.module.css";
+
 const Article = ({ data }) => {
   const article = data.markdownRemark;
   return (
@@ -15,7 +17,7 @@ const Article = ({ data }) => {
         pathname={article.fields.slug}
         article
       />
-      <article>
+      <article className={styles.article}>
         <h1>{article.frontmatter.title}</h1>
         <div>
           by {article.frontmatter.author}. Published{" "}
@@ -34,7 +36,7 @@ const Article = ({ data }) => {
             </Link>,
           ])}
         </div>
-        <div dangerouslySetInnerHTML={{ __html: article.html }} />
+        <div className={styles.content} dangerouslySetInnerHTML={{ __html: article.html }} />
       </article>
     </Layout>
   );

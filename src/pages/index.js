@@ -8,7 +8,7 @@ const IndexPage = () => {
     <Layout>
       <Seo />
       <section>
-        <h1 className="heading">Welcome to my Blog Site</h1>
+        <h1 className="heading">Well met!</h1>
       </section>
     </Layout>
   );

@@ -1,0 +1,111 @@
+.article {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.article h1 {
+  margin-bottom: 0.5rem;
+}
+
+.article > div:not(.content) {
+  color: #555;
+  margin: 0.35rem 0;
+}
+
+.content {
+  max-width: 68ch;
+  margin-top: 2rem;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.content h2,
+.content h3,
+.content h4 {
+  margin: 2rem 0 0.75rem;
+  line-height: 1.25;
+}
+
+.content p,
+.content ul,
+.content ol,
+.content blockquote,
+.content pre,
+.content table {
+  margin: 1rem 0;
+}
+
+.content ul,
+.content ol {
+  padding-left: 2rem;
+}
+
+.content li + li {
+  margin-top: 0.35rem;
+}
+
+.content blockquote {
+  border-left: 4px solid #888;
+  padding: 0.25rem 1rem;
+  color: #555;
+}
+
+.content code {
+  padding: 0.1em 0.3em;
+  background: #f0f0f0;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+.content pre {
+  overflow-x: auto;
+  padding: 1rem;
+  background: #1f2328;
+  color: #f0f0f0;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+
+.content pre code {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  color: inherit;
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+}
+
+.content th,
+.content td {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #aaa;
+  text-align: left;
+  vertical-align: top;
+}
+
+.content th {
+  background: #e8e8e8;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .article {
+    padding: 1.25rem 0.75rem 3rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+}

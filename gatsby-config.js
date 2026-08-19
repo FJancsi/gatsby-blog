@@ -13,11 +13,7 @@ module.exports = {
       },
       {
         name: "Első óra",
-        link: "/lesson-1",
-      },
-      {
-        name: "About",
-        link: "/about",
+        link: "/articles/lesson-1",
       },
     ],
   },
