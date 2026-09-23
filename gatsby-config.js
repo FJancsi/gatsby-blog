@@ -18,6 +18,10 @@ module.exports = {
       {
         name: "Második óra",
         link: "/articles/lesson-2",
+      },
+      {
+        name: "Harmadik óra",
+        link: "/articles/lesson-3",
       }
     ],
   },
