@@ -2,6 +2,10 @@
   text-decoration: none;
 }
 
+.mainnav {
+  margin-left: 10px;
+}
+
 .mainnav ul[role="menu-bar"] > [role="menu-item"]:hover a {
   color: white;
 }
