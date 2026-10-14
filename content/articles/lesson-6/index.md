@@ -360,123 +360,66 @@ for (int i = 1; i < 5; i++)
 ```
 
 # Közös programozási feladat
-Könyvtári kölcsönzések heti elemzése
+### Dobókockadobások elemzése
+A feladat célja
+Készítsünk közösen egy programot, amely nyolc dobókockadobás eredményét tárolja és elemzi!
 
-Készítsünk közösen egy programot, amely egy könyvtár öt munkanapjának kölcsönzési adatait tárolja és elemzi.
+A dobások eredményét a felhasználó adja meg. Egy szabályos, hatoldalú dobókockával végzett dobás eredménye csak 1 és 6 közötti egész szám lehet.
 
-A program feladata
+### A program követelményei
 A program:
+- tároljon nyolc dobáseredményt egy tömbben;
+- for ciklussal kérje be a dobásokat;
 
-1. kérje be a hétfőtől péntekig történt kölcsönzések számát;
+- csak 1 és 6 közötti értékeket fogadjon el;
 
-2. ne fogadjon el negatív értéket;
+- hibás érték esetén while ciklussal kérje újra az adott dobást;
 
-3. tárolja az adatokat egy ötelemű tömbben;
+- ciklussal írja ki a rögzített dobásokat;
 
-4. írja ki a rögzített adatokat;
+- számítsa ki a dobások összegét;
 
-5. számítsa ki a heti kölcsönzések összegét;
+- számítsa ki a dobások átlagát;
 
-6. számítsa ki a napi átlagot;
+- számolja meg, hány alkalommal dobtunk hatost;
 
-7. számolja meg, hány napon volt legalább az átlaggal megegyező forgalom;
+- határozza meg a legkisebb dobott értéket;
 
-8. határozza meg a legkisebb napi kölcsönzésszámot;
+- határozza meg a legnagyobb dobott értéket;
 
-9. határozza meg a legnagyobb napi kölcsönzésszámot;
+- kérjen be egy keresett dobásértéket;
 
-10. tárolja a minimum és a maximum indexét;
+- lineáris kereséssel állapítsa meg, hogy szerepel-e a keresett érték;
 
-11. kérjen be egy keresett kölcsönzésszámot;
+- találat esetén írja ki az első előfordulás indexét és a dobás sorszámát.
 
-12. állapítsa meg, hogy a keresett érték szerepel-e a tömbben;
-
-13. találat esetén írja ki az első találat indexét és a nap sorszámát.
-
-Példa a program működésére
+Példa:
 ```
-Heti kölcsönzési adatok
------------------------
+Dobókockadobások elemzése
+=========================
 
-1. nap kölcsönzéseinek száma: 42
-2. nap kölcsönzéseinek száma: 38
-3. nap kölcsönzéseinek száma: 51
-4. nap kölcsönzéseinek száma: 47
-5. nap kölcsönzéseinek száma: 32
+1. dobás eredménye: 4
+2. dobás eredménye: 6
+3. dobás eredménye: 2
+4. dobás eredménye: 7
+Hibás érték. A dobás eredménye 1 és 6 közötti szám lehet.
+4. dobás eredménye újra: 5
+5. dobás eredménye: 3
+6. dobás eredménye: 6
+7. dobás eredménye: 1
+8. dobás eredménye: 4
 
-A rögzített adatok
-------------------
-1. nap: 42 kölcsönzés
-2. nap: 38 kölcsönzés
-3. nap: 51 kölcsönzés
-4. nap: 47 kölcsönzés
-5. nap: 32 kölcsönzés
+A rögzített dobások:
+4 6 2 5 3 6 1 4
 
-Heti kölcsönzések száma: 210
-Napi átlag: 42.00
-Legalább átlagos napok száma: 3
+A dobások összege: 31
+A dobások átlaga: 3.88
+A hatos dobások száma: 2
+A legkisebb dobott érték: 1
+A legnagyobb dobott érték: 6
 
-Legkisebb napi érték: 32
-A hozzá tartozó nap sorszáma: 5
-
-Legnagyobb napi érték: 51
-A hozzá tartozó nap sorszáma: 3
-
-Keresett kölcsönzésszám: 47
+Keresett dobásérték: 5
 A keresett érték megtalálható.
 Az első találat indexe: 3
-A nap sorszáma: 4
+A dobás sorszáma: 4
 ```
-
-```c
-#include <stdio.h>
-
-int main(void)
-{
-    printf("Heti kölcsönzési adatok\n");
-    printf("-----------------------\n");
-
-    return 0;
-
-}
-```
-
-<details>
-<summary>
-Megoldás
-</summary>
-</details>
-
-# Óra végi összefoglalás
-A program felépítésének áttekintése
-
-A közösen elkészített program fő részei:
-```
-1. Változók és tömb létrehozása
-2. Adatok beolvasása
-3. Beolvasott adatok ellenőrzése
-4. Tömb kiírása
-5. Összegzés
-6. Átlagszámítás
-7. Megszámlálás
-8. Minimum- és maximumkiválasztás
-9. Lineáris keresés
-10. Eredmények kiírása
-```
-
-A programozási feladatokat nem célszerű rögtön C-kóddal kezdeni. Először meg kell határozni:
-- milyen adatok érkeznek;
-- milyen eredményeket várunk;
-- milyen változókra és tömbökre lesz szükség;
-- milyen ellenőrzéseket kell elvégezni;
-- milyen lépésekből áll az algoritmus;
-- mely lépéseket kell ciklussal ismételni.
-
-
-
-
-
-
-
-
-
