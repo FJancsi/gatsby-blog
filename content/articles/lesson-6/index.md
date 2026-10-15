@@ -423,3 +423,88 @@ A keresett érték megtalálható.
 Az első találat indexe: 3
 A dobás sorszáma: 4
 ```
+
+Megoldás: 
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    printf("Dobókockadobások eredményei\n");
+    printf("----------------------------\n");
+    
+    int dobasok[8] = {0};
+    // Dobások beolvasása és ellenőrzése 1-6 között
+    for (int i = 0; i < 8; i++) {
+        printf("Adja meg a(z) %d. dobás eredményét (1-6): ", i + 1);
+        scanf("%d", &dobasok[i]);
+
+        while (dobasok[i] < 1 || dobasok[i] > 6) {
+            printf("Hibás adat! Adja meg újra a(z) %d. dobás eredményét (1-6): ", i + 1);
+            scanf("%d", &dobasok[i]);
+        }
+        
+    }
+    // Dobások kiíratása
+    int dobasok_osszege = 0;
+    for (int i = 0; i < 8; i++) {
+        printf("A(z) %d. dobás eredménye: %d\n", i + 1, dobasok[i]);
+        dobasok_osszege += dobasok[i];
+    }
+    // Dobások összegének kiíratása
+    printf("A dobások összege: %d\n", dobasok_osszege);
+
+    // Dobások átlagának kiíratása
+    double atlag = (double)dobasok_osszege / 8;
+    printf("A dobások átlaga: %.2f\n", atlag);
+
+    // Hatósok számának kiíratása
+    int hatosok_szama = 0;
+    for (int i = 0; i < 8; i++) {
+        if (dobasok[i] == 6) {
+            hatosok_szama++;
+        }
+    }
+    printf("A hatosok száma: %d\n", hatosok_szama);
+
+    // Legkisebb és legnagyobb dobás keresése
+    int min_dobas = dobasok[0];
+    int max_dobas = dobasok[0];
+    int min_index = 0;
+    int max_index = 0;
+
+    for (int i = 1; i < 8; i++) {
+        if (dobasok[i] < min_dobas) {
+            min_dobas = dobasok[i];
+            min_index = i;
+        }
+        if (dobasok[i] > max_dobas) {
+            max_dobas = dobasok[i];
+            max_index = i;
+        }
+    }
+    printf("A legkisebb dobás: %d (a(z) %d. dobás)\n", min_dobas, min_index + 1);
+    printf("A legnagyobb dobás: %d (a(z) %d. dobás)\n", max_dobas, max_index + 1);
+
+    // Keresett szám meghatározása és helyének kiíratása
+    int keresett_szam = 0;
+    int keresett_szam_index = -1;
+
+    printf("Adja meg a keresett számot (1-6): ");
+    scanf("%d", &keresett_szam);
+    
+    // Keresett szám helyének meghatározása
+    for (int i = 0; i < 8; i++) {
+        if (dobasok[i] == keresett_szam && keresett_szam_index == -1) {
+            keresett_szam_index = i;
+        }
+    }
+    if (keresett_szam_index != -1) {
+        printf("A keresett szám: %d (a(z) %d. dobás)\n", keresett_szam, keresett_szam_index + 1);
+    } else {
+        printf("A keresett szám: %d nem található a dobások között.\n", keresett_szam);
+    }
+
+    return 0;
+}
+```
