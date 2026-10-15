@@ -109,3 +109,55 @@
     font-size: 1rem;
   }
 }
+
+@media print {
+  .article {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    color: #000;
+  }
+
+  .article > div:not(.content) {
+    color: #000;
+  }
+
+  .content {
+    max-width: none;
+    margin-top: 1rem;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  .content h2,
+  .content h3,
+  .content h4 {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  .content pre {
+    overflow: visible;
+    padding: 0.5rem;
+    background: #fff;
+    color: #000;
+    border: 1px solid #888;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .content code {
+    background: #fff;
+    color: #000;
+    border-color: #aaa;
+  }
+
+  .content table {
+    display: table;
+    overflow: visible;
+  }
+
+  .content th {
+    background: #fff;
+  }
+}

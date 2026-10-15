@@ -7,6 +7,7 @@ import Footer from "./Footer";
 
 // Styles
 import "@sakun/system.css";
+import "./print.css";
 
 const Layout = ({ children }) => {
   const { site } = useStaticQuery(

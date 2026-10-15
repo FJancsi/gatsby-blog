@@ -1,0 +1,49 @@
+@media print {
+  @page {
+    margin: 18mm;
+  }
+
+  html,
+  body {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    font-size: 10.5pt;
+  }
+
+  #site-header,
+  footer,
+  main > nav {
+    display: none !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+  }
+
+  figure,
+  img,
+  tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+}
