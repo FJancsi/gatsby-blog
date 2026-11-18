@@ -47,6 +47,10 @@ module.exports = {
         name: "Kilencedik óra",
         link: "/articles/lesson-9",
       },
+      {
+        name: "Tizedik óra",
+        link: "/articles/lesson-10",
+      }
     ],
   },
   plugins: [
